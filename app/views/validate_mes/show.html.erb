@@ -1,0 +1,12 @@
+<table>
+  <tr>
+    <th>Int</th>
+    <th>Float</th>
+  </tr>
+  <tr>
+    <td><%=h @validate_me.number_int %></td>
+    <td><%=h @validate_me.number_float %></td>
+  </tr>
+</table>  
+<%= link_to 'Edit', edit_validate_me_path(@validate_me) %> |
+<%= link_to 'Back', validate_mes_path %>

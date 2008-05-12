@@ -1,0 +1,18 @@
+<h1>Editing validate_me</h1>
+
+<%= error_messages_for :validate_me %>
+
+<% form_for(@validate_me) do |f| %>
+  <p>
+    Int: <%= f.text_field :number_int, :size => 10 %>
+  </p>
+  <p>
+    Float: <%= f.text_field :number_float, :size => 10 %>
+  </p
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @validate_me %> |
+<%= link_to 'Back', validate_mes_path %>

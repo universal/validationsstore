@@ -1,0 +1,9 @@
+!!!WARNING THE CURRENT VERSION BREAKS RAILS TESTS WARNING!!!
+use at your own risk ;)
+
+Store the validations so that they are accessible at a later time.
+
+This shall enable you for example to create for example client-side validations
+in a more generic way :)
+
+ 

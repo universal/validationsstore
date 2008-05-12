@@ -1,0 +1,23 @@
+<h1>Listing validate_mes</h1>
+
+<table>
+  <tr>
+  	<th>Int</th>
+	<th>Float</th>
+	<th colspan="3">Actions</th>
+  </tr>
+
+<% for validate_me in @validate_mes %>
+  <tr>
+	<td><%=h validate_me.number_int %></td>
+	<td><%=h validate_me.number_float %></td>
+    <td><%= link_to 'Show', validate_me %></td>
+    <td><%= link_to 'Edit', edit_validate_me_path(validate_me) %></td>
+    <td><%= link_to 'Destroy', validate_me, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New validate_me', new_validate_me_path %>
